@@ -1,0 +1,18 @@
+{
+		"manifest_version": 2,
+		"name": "デスククリア・施錠リマインダーfor HRMOS",
+		"version": "0.1",
+		"description": "HRMOS退勤時にデスククリア・施錠がされているかアラートを出す",
+		"author": "deeeeeeekun",
+
+		"permissions": [
+				"activeTab"
+		],
+
+		"content_scripts": [{
+				"matches": ["https://ext-app.hrmos.co/attendance/"],
+				"js": ["script.js"],
+				"run_at": "document_idle"
+		}]
+
+}
