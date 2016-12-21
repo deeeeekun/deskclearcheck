@@ -1,7 +1,7 @@
 {
 		"manifest_version": 2,
 		"name": "デスククリア・施錠リマインダーfor HRMOS",
-		"version": "0.2",
+		"version": "0.3",
 		"description": "HRMOS退勤時にデスククリア・施錠がされているかアラートを出す",
 		"author": "deeeeeeekun",
 		"homepage_url": "https://github.com/davidgenesiscruz/deskclearcheck",
