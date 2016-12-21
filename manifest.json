@@ -5,6 +5,9 @@
 		"description": "HRMOS退勤時にデスククリア・施錠がされているかアラートを出す",
 		"author": "deeeeeeekun",
 		"homepage_url": "https://github.com/davidgenesiscruz/deskclearcheck",
+		"icons": {
+				"128": "icons/128.png"
+		},
 
 		"browser_action": {
 				"default_icon": {
