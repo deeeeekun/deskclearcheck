@@ -61,4 +61,4 @@ function fadeOut(elementId, callback) {
 				}, 50);
 }
 
-setTimeout(init(), 1000);
+setTimeout(init, 1000);
