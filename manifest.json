@@ -1,36 +1,36 @@
 {
-		"manifest_version": 2,
-		"name": "デスククリア・施錠リマインダー",
-		"version": "0.5",
-		"description": "退勤時にデスククリア・施錠がされているかアラートを出す",
-		"author": "deeeeeeekun",
-		"homepage_url": "https://github.com/davidgenesiscruz/deskclearcheck",
-		"icons": {
-				"128": "icons/128.png"
-		},
+    "manifest_version": 2,
+    "name": "デスククリア・施錠リマインダー",
+    "version": "0.6",
+    "description": "退勤時にデスククリア・施錠がされているかアラートを出す",
+    "author": "deeeeeeekun",
+    "homepage_url": "https://github.com/davidgenesiscruz/deskclearcheck",
+    "icons": {
+        "128": "icons/128.png"
+    },
 
-		"browser_action": {
-				"default_icon": {
-						"19": "icons/19.png",
-						"38": "icons/38.png"
-				},
-				"default_title": "リマインダー: ON"
-		},
-		
-		"background": {
-				"scripts": [ "scripts/background.js" ]
-		},
+    "browser_action": {
+        "default_icon": {
+            "19": "icons/19.png",
+            "38": "icons/38.png"
+        },
+        "default_title": "リマインダー: ON"
+    },
+    
+    "background": {
+        "scripts": [ "scripts/background.js" ]
+    },
 
-		"content_scripts": [
-				{
-						"matches": [ "https://ext-app.hrmos.co/attendance/" ],
-						"js": [ "scripts/content.js" ],
-						"run_at": "document_idle"
-				}
-		],
+    "content_scripts": [
+        {
+            "matches": [ "https://ext-app.hrmos.co/attendance/" ],
+            "js": [ "scripts/content.js" ],
+            "run_at": "document_idle"
+        }
+    ],
 
-		"permissions": [
-				"activeTab",
-				"storage"
-		]
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
 }
