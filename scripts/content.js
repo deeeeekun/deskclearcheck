@@ -1,5 +1,5 @@
 function init() {
-    var container = document.getElementsByClassName('index__pgCheckIoButtonGroup___tq8aN')[0],
+    var container = document.getElementsByTagName('body')[0],
         targetClassName = 'leave index__buttonAttendance___33c2m';
 
     container.addEventListener('click', function(e) {
