@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "デスククリア・施錠リマインダー",
-    "version": "0.7",
+    "version": "0.8",
     "description": "退勤時にデスククリア・施錠がされているかアラートを出す",
     "author": "deeeeeeekun",
     "homepage_url": "https://github.com/davidgenesiscruz/deskclearcheck",
@@ -23,7 +23,7 @@
 
     "content_scripts": [
         {
-            "matches": [ "https://ext-app.hrmos.co/attendance/" ],
+            "matches": [ "https://ext-app.hrmos.co/*" ],
             "js": [ "scripts/content.js" ],
             "run_at": "document_idle"
         }
